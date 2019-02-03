@@ -5,6 +5,11 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+var Router2012 = require('./routes/2012');
+var Router2013 = require('./routes/2013');
+var Router2014 = require('./routes/2014');
+var Router2015 = require('./routes/2015');
+var Router2016 = require('./routes/2016');
 var Router2017 = require('./routes/2017');
 var app = express();
 
@@ -19,6 +24,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/2012', Router2012);
+app.use('/2013', Router2013);
+app.use('/2014', Router2014);
+app.use('/2015', Router2015);
+app.use('/2016', Router2016);
 app.use('/2017', Router2017);
 
 // catch 404 and forward to error handler

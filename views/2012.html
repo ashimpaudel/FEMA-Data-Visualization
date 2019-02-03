@@ -59,7 +59,7 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 6,
+          zoom: 5,
           center: {lat: 37.775, lng: -122.434},
           mapTypeId: 'roadmap'
         });
@@ -102,7 +102,7 @@
         heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
       }
 
-      // Heatmap data: 500 Points
+      // Heatmap data
       function getPoints() {
         return [
 {location: new google.maps.LatLng(18.003492, -66.55868), weight: 1},
@@ -143,7 +143,6 @@
 {location: new google.maps.LatLng(39.492265, -75.01887), weight: 3},
 {location: new google.maps.LatLng(39.364966, -74.43903), weight: 1},
 {location: new google.maps.LatLng(40.571504, -74.3183), weight: 1},
-{location: new google.maps.LatLng(NA, NA), weight: 1},
 {location: new google.maps.LatLng(40.91255, -77.77387), weight: 1},
 {location: new google.maps.LatLng(40.017362, -75.08769), weight: 1},
 {location: new google.maps.LatLng(38.685117, -77.44796), weight: 1},
@@ -208,7 +207,6 @@
 {location: new google.maps.LatLng(37.995103, -78.04612), weight: 2},
 {location: new google.maps.LatLng(37.639354, -77.72841), weight: 1},
 {location: new google.maps.LatLng(38.007186, -77.86809), weight: 3},
-{location: new google.maps.LatLng(NA, NA), weight: 1},
 {location: new google.maps.LatLng(37.787745, -77.96916), weight: 1},
 {location: new google.maps.LatLng(37.813901, -77.68952), weight: 1},
 {location: new google.maps.LatLng(37.733844, -77.888082), weight: 1},
@@ -639,7 +637,6 @@
 {location: new google.maps.LatLng(31.296257, -91.12921), weight: 1},
 {location: new google.maps.LatLng(31.363848, -90.17457), weight: 2},
 {location: new google.maps.LatLng(31.231448, -90.02263), weight: 1},
-{location: new google.maps.LatLng(NA, NA), weight: 1},
 {location: new google.maps.LatLng(31.148177, -90.79859), weight: 1},
 {location: new google.maps.LatLng(31.509919, -90.69788), weight: 1},
 {location: new google.maps.LatLng(31.225598, -90.43327), weight: 1},
@@ -704,7 +701,6 @@
 {location: new google.maps.LatLng(40.892251, -84.45548), weight: 1},
 {location: new google.maps.LatLng(41.072614, -84.7317), weight: 1},
 {location: new google.maps.LatLng(40.874092, -84.57871), weight: 1},
-{location: new google.maps.LatLng(NA, NA), weight: 1},
 {location: new google.maps.LatLng(40.831351, -84.93704), weight: 1},
 {location: new google.maps.LatLng(41.215338, -84.85575), weight: 1},
 {location: new google.maps.LatLng(41.243248, -85.16711), weight: 1},
@@ -885,8 +881,6 @@
 {location: new google.maps.LatLng(29.677893, -90.0901), weight: 1},
 {location: new google.maps.LatLng(30.030902, -90.068022), weight: 1},
 {location: new google.maps.LatLng(30.032997, -89.882564), weight: 1},
-{location: new google.maps.LatLng(NA, NA), weight: 1},
-{location: new google.maps.LatLng(NA, NA), weight: 1},
 {location: new google.maps.LatLng(29.797776, -90.81809), weight: 3},
 {location: new google.maps.LatLng(29.688425, -91.220844), weight: 1},
 {location: new google.maps.LatLng(30.030819, -91.07576), weight: 1},
